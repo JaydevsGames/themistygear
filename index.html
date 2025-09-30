@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steampunk Pub</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Steampunk Pub</h1>
+        <p>Donde la fantasía y el vapor se mezclan en cada copa</p>
+    </header>
+    <nav>
+        <button class="active" onclick="showSection('cocteles')">Cócteles</button>
+        <button onclick="showSection('combinados')">Combinados</button>
+        <button onclick="showSection('refrescos')">Refrescos</button>
+        <button onclick="showSection('cervezas')">Cervezas</button>
+        <button onclick="showSection('snacks')">Snacks</button>
+    </nav>
+    <section id="cocteles" class="menu-section active">
+        <div class="item">
+            <span class="item-icon">⚙️</span>
+            <div class="item-details">
+                <h3 class="item-title">El Engranaje Dorado</h3>
+                <p class="item-desc">Whisky, licor de miel, zumo de limón y un toque de jengibre, servido con decoración de engranajes.</p>
+            </div>
+            <span class="item-price">8€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🕰️</span>
+            <div class="item-details">
+                <h3 class="item-title">Reloj de Vapor</h3>
+                <p class="item-desc">Ron oscuro, café frío, sirope de vainilla y espuma de leche, presentado en vaso de tubo con reloj antiguo.</p>
+            </div>
+            <span class="item-price">7.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🔩</span>
+            <div class="item-details">
+                <h3 class="item-title">Tornillo Oxidado</h3>
+                <p class="item-desc">Gin, vermut rojo, bitter y naranja, servido con tornillo decorativo y humo aromático.</p>
+            </div>
+            <span class="item-price">8.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🦾</span>
+            <div class="item-details">
+                <h3 class="item-title">Brazo Mecánico</h3>
+                <p class="item-desc">Vodka, licor de café, crema y canela, servido en vaso con brazo robótico decorativo.</p>
+            </div>
+            <span class="item-price">8€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🛢️</span>
+            <div class="item-details">
+                <h3 class="item-title">Barril de Vapor</h3>
+                <p class="item-desc">Bourbon, sirope de arce, zumo de naranja y bitters, servido en mini barril.</p>
+            </div>
+            <span class="item-price">9€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧭</span>
+            <div class="item-details">
+                <h3 class="item-title">Brújula del Capitán</h3>
+                <p class="item-desc">Ron añejo, zumo de lima, azúcar moreno y menta, decorado con brújula vintage.</p>
+            </div>
+            <span class="item-price">8.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪤</span>
+            <div class="item-details">
+                <h3 class="item-title">Trampa de Vapor</h3>
+                <p class="item-desc">Tequila, triple sec, zumo de pomelo y sal negra, servido en vaso con trampa mecánica.</p>
+            </div>
+            <span class="item-price">8€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧬</span>
+            <div class="item-details">
+                <h3 class="item-title">Cóctel Génesis</h3>
+                <p class="item-desc">Gin, licor de flor de saúco, zumo de manzana y soda, decorado con espiral de ADN.</p>
+            </div>
+            <span class="item-price">8.5€</span>
+        </div>
+    </section>
+    <section id="combinados" class="menu-section">
+        <div class="item">
+            <span class="item-icon">🛠️</span>
+            <div class="item-details">
+                <h3 class="item-title">Martillo de Vapor</h3>
+                <p class="item-desc">Vodka premium con tónica especiada y rodaja de lima, servido en vaso con remaches metálicos.</p>
+            </div>
+            <span class="item-price">6.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧲</span>
+            <div class="item-details">
+                <h3 class="item-title">Imán de Cobre</h3>
+                <p class="item-desc">Ron blanco, zumo de piña y soda de jengibre, decorado con espiral de cobre.</p>
+            </div>
+            <span class="item-price">7€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🔗</span>
+            <div class="item-details">
+                <h3 class="item-title">Cadena de Vapor</h3>
+                <p class="item-desc">Tequila, refresco de cola y lima, servido con cadena decorativa y hielo seco.</p>
+            </div>
+            <span class="item-price">7.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪙</span>
+            <div class="item-details">
+                <h3 class="item-title">Moneda de Bronce</h3>
+                <p class="item-desc">Whisky, ginger ale y limón, decorado con moneda steampunk.</p>
+            </div>
+            <span class="item-price">7€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧯</span>
+            <div class="item-details">
+                <h3 class="item-title">Extintor de Vapor</h3>
+                <p class="item-desc">Vodka, soda de frutos rojos y menta, servido en vaso con extintor miniatura.</p>
+            </div>
+            <span class="item-price">7.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪤</span>
+            <div class="item-details">
+                <h3 class="item-title">Trampa de Cobre</h3>
+                <p class="item-desc">Ron dorado, zumo de maracuyá y soda de limón, decorado con trampa de cobre.</p>
+            </div>
+            <span class="item-price">7.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧪</span>
+            <div class="item-details">
+                <h3 class="item-title">Mezcla Alquimista</h3>
+                <p class="item-desc">Gin, refresco de lima y pepino, servido en frasco de laboratorio.</p>
+            </div>
+            <span class="item-price">7€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🦿</span>
+            <div class="item-details">
+                <h3 class="item-title">Pierna de Hierro</h3>
+                <p class="item-desc">Tequila, soda de pomelo y sal negra, decorado con pierna robótica.</p>
+            </div>
+            <span class="item-price">7.5€</span>
+        </div>
+    </section>
+    <section id="refrescos" class="menu-section">
+        <div class="item">
+            <span class="item-icon">🧪</span>
+            <div class="item-details">
+                <h3 class="item-title">Elixir de Vapor</h3>
+                <p class="item-desc">Refresco artesanal de frutos rojos y menta, servido en frasco de laboratorio.</p>
+            </div>
+            <span class="item-price">4€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">⚗️</span>
+            <div class="item-details">
+                <h3 class="item-title">Tónico Alquimista</h3>
+                <p class="item-desc">Tónica premium con esencia de pepino y limón, servido en vaso de matraz.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">💡</span>
+            <div class="item-details">
+                <h3 class="item-title">Refresco Edison</h3>
+                <p class="item-desc">Refresco de naranja sanguina y soda, servido con bombilla decorativa.</p>
+            </div>
+            <span class="item-price">4€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧊</span>
+            <div class="item-details">
+                <h3 class="item-title">Hielo de Vapor</h3>
+                <p class="item-desc">Refresco de limón y menta, servido con cubos de hielo seco.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪔</span>
+            <div class="item-details">
+                <h3 class="item-title">Lámpara de Gas</h3>
+                <p class="item-desc">Refresco de manzana y canela, servido en vaso con lámpara decorativa.</p>
+            </div>
+            <span class="item-price">4€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧃</span>
+            <div class="item-details">
+                <h3 class="item-title">Jugo Steampunk</h3>
+                <p class="item-desc">Zumo de frutos tropicales y soda, decorado con engranajes.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪙</span>
+            <div class="item-details">
+                <h3 class="item-title">Moneda Refrescante</h3>
+                <p class="item-desc">Refresco de cola y lima, decorado con moneda steampunk.</p>
+            </div>
+            <span class="item-price">4€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧲</span>
+            <div class="item-details">
+                <h3 class="item-title">Imán Refrescante</h3>
+                <p class="item-desc">Refresco de jengibre y limón, decorado con imán de cobre.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+    </section>
+    <section id="cervezas" class="menu-section">
+        <div class="item">
+            <span class="item-icon">🍺</span>
+            <div class="item-details">
+                <h3 class="item-title">Cerveza de Vapor</h3>
+                <p class="item-desc">Cerveza artesanal oscura con notas de café y chocolate, servida en jarra steampunk.</p>
+            </div>
+            <span class="item-price">5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🍻</span>
+            <div class="item-details">
+                <h3 class="item-title">Brindis del Inventor</h3>
+                <p class="item-desc">Cerveza rubia ligera, decorada con engranajes y tuercas comestibles.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🛢️</span>
+            <div class="item-details">
+                <h3 class="item-title">Barril de Bronce</h3>
+                <p class="item-desc">Cerveza tostada con aroma a caramelo, servida en mini barril.</p>
+            </div>
+            <span class="item-price">5.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🦾</span>
+            <div class="item-details">
+                <h3 class="item-title">Cerveza Robótica</h3>
+                <p class="item-desc">Cerveza negra con espuma cremosa, decorada con brazo mecánico.</p>
+            </div>
+            <span class="item-price">5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧲</span>
+            <div class="item-details">
+                <h3 class="item-title">Imán de Malta</h3>
+                <p class="item-desc">Cerveza de trigo con notas cítricas, decorada con imán de cobre.</p>
+            </div>
+            <span class="item-price">5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧪</span>
+            <div class="item-details">
+                <h3 class="item-title">Experimento de Lúpulo</h3>
+                <p class="item-desc">IPA artesanal con lúpulo intenso, servida en frasco de laboratorio.</p>
+            </div>
+            <span class="item-price">5.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🕰️</span>
+            <div class="item-details">
+                <h3 class="item-title">Reloj de Malta</h3>
+                <p class="item-desc">Cerveza ámbar con notas de miel y especias, decorada con reloj antiguo.</p>
+            </div>
+            <span class="item-price">5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🪙</span>
+            <div class="item-details">
+                <h3 class="item-title">Moneda de Espuma</h3>
+                <p class="item-desc">Cerveza especial con espuma densa, decorada con moneda steampunk.</p>
+            </div>
+            <span class="item-price">5.5€</span>
+        </div>
+    </section>
+    <section id="snacks" class="menu-section">
+        <div class="item">
+            <span class="item-icon">🥨</span>
+            <div class="item-details">
+                <h3 class="item-title">Pretzel de Vapor</h3>
+                <p class="item-desc">Pretzel artesanal con salsa de queso y mostaza, decorado con engranajes comestibles.</p>
+            </div>
+            <span class="item-price">3.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🍟</span>
+            <div class="item-details">
+                <h3 class="item-title">Patatas Steampunk</h3>
+                <p class="item-desc">Patatas fritas especiadas con salsa de vapor picante.</p>
+            </div>
+            <span class="item-price">3€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🌭</span>
+            <div class="item-details">
+                <h3 class="item-title">Hot Dog Mecánico</h3>
+                <p class="item-desc">Hot dog con salchicha ahumada y cebolla caramelizada, decorado con tornillos de pan.</p>
+            </div>
+            <span class="item-price">4€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🧀</span>
+            <div class="item-details">
+                <h3 class="item-title">Queso Fundido Alquimista</h3>
+                <p class="item-desc">Queso fundido con especias y pan tostado, servido en matraz.</p>
+            </div>
+            <span class="item-price">3.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🍗</span>
+            <div class="item-details">
+                <h3 class="item-title">Alitas de Vapor</h3>
+                <p class="item-desc">Alitas de pollo con salsa barbacoa y especias steampunk.</p>
+            </div>
+            <span class="item-price">4.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🥓</span>
+            <div class="item-details">
+                <h3 class="item-title">Bacon Oxidado</h3>
+                <p class="item-desc">Tiras de bacon crujiente con salsa de miel y mostaza.</p>
+            </div>
+            <span class="item-price">3.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🥜</span>
+            <div class="item-details">
+                <h3 class="item-title">Cacahuetes del Inventor</h3>
+                <p class="item-desc">Cacahuetes tostados con especias y sal negra.</p>
+            </div>
+            <span class="item-price">2.5€</span>
+        </div>
+        <div class="item">
+            <span class="item-icon">🍿</span>
+            <div class="item-details">
+                <h3 class="item-title">Palomitas de Vapor</h3>
+                <p class="item-desc">Palomitas de maíz con mantequilla y especias steampunk.</p>
+            </div>
+            <span class="item-price">2.5€</span>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 JayDevs. Todos los derechos reservados.
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.menu-section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            document.querySelectorAll('nav button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            const buttons = document.querySelectorAll('nav button');
+            if (sectionId === 'cocteles') buttons[0].classList.add('active');
+            if (sectionId === 'combinados') buttons[1].classList.add('active');
+            if (sectionId === 'refrescos') buttons[2].classList.add('active');
+            if (sectionId === 'cervezas') buttons[3].classList.add('active');
+            if (sectionId === 'snacks') buttons[4].classList.add('active');
+        }
+    </script>
+</body>
+</html></div>

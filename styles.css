@@ -1,0 +1,120 @@
+
+        body {
+            margin: 0;
+            background: #181818 url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0c080;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(24,18,10,0.85);
+            backdrop-filter: blur(6px);
+            z-index: -1;
+        }
+        header {
+            background: rgba(30, 20, 10, 0.95);
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #6c4f2a;
+            box-shadow: 0 4px 12px #000a;
+        }
+        header h1 {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 3rem;
+            color: #e0c080;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px #000;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0 1rem 0;
+            flex-wrap: wrap;
+        }
+        nav button {
+            background: #2d2212;
+            color: #e0c080;
+            border: 2px solid #6c4f2a;
+            border-radius: 8px;
+            padding: 0.7rem 2rem;
+            font-size: 1.1rem;
+            font-family: 'UnifrakturCook', cursive;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        nav button.active, nav button:hover {
+            background: #6c4f2a;
+            border-color: #e0c080;
+            color: #fff;
+        }
+        .menu-section {
+            display: none;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            background: rgba(30, 20, 10, 0.92);
+            border-radius: 12px;
+            box-shadow: 0 2px 16px #000a;
+            padding: 2rem;
+            border: 2px solid #6c4f2a;
+        }
+        .menu-section.active {
+            display: block;
+            animation: fadeIn 0.7s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dashed #6c4f2a;
+            padding-bottom: 1rem;
+        }
+        .item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .item-icon {
+            font-size: 2.2rem;
+            margin-right: 1.2rem;
+            color: #e0c080;
+            text-shadow: 0 2px 8px #000;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .item-title {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 1.3rem;
+            color: #e0c080;
+            margin: 0 0 0.3rem 0;
+        }
+        .item-desc {
+            font-size: 1rem;
+            color: #c8b080;
+            margin: 0;
+        }
+        .item-price {
+            font-size: 1.1rem;
+            color: #bfa76f;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: rgba(30, 20, 10, 0.95);
+            color: #6c4f2a;
+            font-size: 1rem;
+            border-top: 2px solid #6c4f2a;
+            letter-spacing: 1px;
+        }
